@@ -75,7 +75,7 @@ def clean_and_merge_final():
     if all_data:
         final_df = pd.concat(all_data, ignore_index=True)
         
-        # --- PERBAIKAN DI SINI: URUTKAN ASCENDING (True) ---
+        # --- URUTKAN ASCENDING (True) ---
         # True = Tanggal kecil (01) ke besar (31)
         # False = Tanggal besar (31) ke kecil (01)
         final_df = final_df.sort_values(by='Tanggal Transaksi', ascending=True)
