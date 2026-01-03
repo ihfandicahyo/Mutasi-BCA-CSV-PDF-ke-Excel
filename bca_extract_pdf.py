@@ -19,7 +19,7 @@ def extract_bca_clean(pdf_path, output_path):
     x_saldo_limit = None
     current_tx = None
 
-    print(f"Processing: {pdf_path}")
+    print(f"Memproses file: {pdf_path}")
 
     with pdfplumber.open(pdf_path) as pdf:
         for page_num, page in enumerate(pdf.pages):
